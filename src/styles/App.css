@@ -1,0 +1,201 @@
+.App {
+  text-align: center;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  /* border: 2px solid green; */
+}
+
+.side-nav
+{
+  display: flex;
+  flex-direction:column;
+  /* border-right: 2px solid black; */
+  height: 100%;
+  min-width: 30%;
+  background-color: white;
+  box-shadow: 0px 4px 4px 1px #aaaaaa;
+}
+
+.prof-name
+{
+width: fit-content ;
+margin-right: 60px;
+font-weight: 700;
+transform: translateY(80%);
+}
+.prof-message
+{
+
+width: fit-content;
+margin-right: 50px;
+max-lines: 1;
+text-overflow: ellipsis;
+justify-content: left;
+}
+.chat-head
+{
+display: flex;
+gap:10px;
+padding-left: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 10px;
+text-overflow: ellipsis;
+max-height: 100px;
+/* border: 1px solid red; */
+border-bottom: 1px solid #aaaaaa;
+}
+.chat-head:hover
+{
+  background-color: #f1f1f1;
+}
+.chat-profile
+{
+border-radius: 50%;
+width: 60px;
+height: 60px;
+}
+
+.msg-state
+{
+top: 20px;
+left:5px;
+position: absolute;
+}
+.message-cont
+{
+box-shadow: 0px 0px 1px 1px black;
+min-height: 45px;
+max-width: 200px;
+padding-left: 10px;
+padding-right: 10px;
+align-content: center;
+background-color: white;
+padding-top: 5px;
+position: relative;
+display: flex;
+flex-direction: column;
+ 
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.bt-send
+{
+  background-image: url('/public/send_bt_bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+.login-cont
+{
+width:100%;
+height:fit-content;
+display:flex;
+flex-direction:column;
+margin-left: auto;
+margin-right: auto;
+box-shadow: 4px 1px 4px 0px grey;
+border-radius: 5px;
+gap: 20px;
+background-color: white;
+box-shadow: 0px 0px 2px 0px rgb(0,0,0);
+}
+.login-choosepf
+{
+border-radius: 4px;
+margin-left:auto;
+margin-right:auto;
+transition:background 0.3s ease-in;
+width:fit-content;
+padding: 6px;
+/* border: 1px solid #1976d2; */
+opacity: 0.95;
+font-size: large;
+}
+.login-choosepf:hover
+{
+background-color: #1976d2;
+color: white;
+border: 1px solid white;
+}
+.login-span
+{
+color: rgb(61, 122, 245);
+cursor: default;
+}
+.bt-login
+{
+  background-color:rgb(245, 9, 245);
+  color: white;
+  width: 20%;
+  height:7vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+  border: none;
+  font-size: large;
+
+}
+.login-input
+{
+  width: 80%;
+  height: 6vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  border-radius: 8px;
+  border: 1px solid #eeeeee;
+}
+
+.side-nav-loader
+{
+  font-size: larger;
+  color: black;
+  width: 100%;
+  border : 1px solid black;
+  height: 100%;
+}
+.login-input:focus
+{
+  outline: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media (max-width : 600px) {
+  .login-cont
+  {
+    width: 70%;
+    height: 80%;
+  }
+ 
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
